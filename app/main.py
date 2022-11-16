@@ -1,8 +1,9 @@
-from flask import Flask, render_template, flash, redirect, url_for
-from forms import RegistrationForm, LoginForm
-from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
+from flask import Flask, render_template, flash, redirect, url_for
+from flask_sqlalchemy import SQLAlchemy
+
+from app.forms import RegistrationForm, LoginForm
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '710d19f48502d56f61334e369fc54202'
